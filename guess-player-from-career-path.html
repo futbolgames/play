@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Player from Career Path | Football Trivia Game</title>
+  <meta name="description" content="Play Guess the Player from Career Path, a fun football trivia game. Test your knowledge by identifying footballers based on their transfer history.">
+  <meta name="keywords" content="guess player from career path game, guess the football player game, guess the player, guess the soccer player,futbol minigames, football games, soccer games, futbol minijuegos, futbol 11 juegos">
+
+  <meta property="og:title" content="Guess the Player from Career Path | Football Trivia Game">
+  <meta property="og:description" content="Play Guess the Player from Career Path, a fun football trivia game. Test your knowledge by identifying footballers based on their transfer history.">
+  <meta property="og:image" content="https://www.yourwebsite.com/path-to-image.jpg">
+  <meta property="og:url" content="https://www.yourwebsite.com/guess-player-from-career-path.html">
+
+
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/career.css">
+  <link rel="stylesheet" href="styles/main.css">
+ <!--
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Guess the Player from Career Path",
+      "description": "Play Guess the Player from Career Path, a fun football trivia game. Test your knowledge by identifying footballers based on their transfer history.",
+      "url": "https://tizianolopez.github.io/fulboldaily/guess-player-from-career-path.html",
+      "image": "https://www.yourwebsite.com/path-to-image.jpg"
+    }
+    </script>
+   Google Analytics -->
+   <!-- Google tag (gtag.js)
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GD4MSLT0TN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GD4MSLT0TN');
+</script>
+ -->
+</head>
+<body>
+
+  <div class="wrapper">
+    <aside id="sidebar">
+        <div class="d-flex">
+            <button class="toggle-btn" type="button" aria-label="Toggle sidebar">
+                <div class="icon-container">
+                        <img src="img/grid-alt.svg" alt="Aside Toggle Icon">
+                    </div>
+            </button>
+            <div class="sidebar-logo">
+                <a href="#">FootballMinigames</a>
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="sidebar-item">
+                <a href="football-wordle.html" class="sidebar-link collapsed has-dropdown"
+                    data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                    <div class="icon-container">
+                        <img src="img/wordle.svg" alt="Football Wordle Icon">
+                    </div>
+                    <span>Wordle</span>
+                </a>
+                <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="football-wordle.html" class="sidebar-link">Wordle</a>
+                    </li>
+                </ul>
+            </li>
+    
+            <li class="sidebar-item">
+                <a href="football-crossword.html" class="sidebar-link collapsed has-dropdown"
+                    data-bs-target="#crossworddropdown" aria-expanded="false" aria-controls="wordledropdown">
+                    <div class="icon-container">
+                        <img src="img/crossword.png" alt="Football Crossword Icon">
+                    </div>
+                    <span>Cross-it</span>
+                </a>
+                <ul id="crossworddropdown" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="football-crossword.html" class="sidebar-link">Crossword</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#formationdropdown" aria-expanded="false" aria-controls="formationdropdown">
+                    <div class="icon-container">
+                        <img src="img/formation.svg" alt="Starting 11 game Icon">
+                    </div>
+                    <span>Starting 11</span>
+                </a>
+                <ul id="formationdropdown" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="formation.html" class="sidebar-link">F11 Countries</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="formation.html" class="sidebar-link">F11 Clubs</a>
+                    </li>
+                </ul>
+            </li>
+    
+            <li class="sidebar-item">
+                <a href="guess-player-from-career-path.html" class="sidebar-link collapsed has-dropdown"
+                    data-bs-target="#careerpathdropdown" aria-expanded="false" aria-controls="wordledropdown">
+                    <div class="icon-container">
+                        <img src="img/guess.svg" alt="guess player from career path game">
+                    </div>
+                    <span>Guess player from career</span>
+                </a>
+                <ul id="careerpathdropdown" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="guess-player-from-career-path.html" class="sidebar-link">Guess player from career path</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <div class="icon-container">
+                        <img src="img/settings.svg" alt="Settings Icon" width="24px">
+                    </div>
+                <span>Settings</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    
+  
+
+    <div class="main">
+          <!-- Navbar for mobile -->
+          <nav class="navbar navbar-expand-md navbar-light d-md-none sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-auto" href="#">FootballMinigames</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <div class="row">
+                        <div class="col-6">
+                            <li class="nav-item">
+                                <a class="nav-link" href="football-wordle.html">
+                                    <img src="img/wordle.svg" width="48px" height="48px" alt="Football Wordle Icon">
+                                    <span>Wordle</span>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="col-6">
+                            <li class="nav-item">
+                                <a class="nav-link" href="football-crossword.html">
+                                    <img src="img/crossword.png" width="48px" height="48px" alt="Football Crossword Icon">
+                                    <span>Cross-it</span>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <li class="nav-item">
+                                <a class="nav-link collapsed has-dropdown" data-bs-toggle="collapse"
+                                    data-bs-target="#authMobile" aria-expanded="false" aria-controls="authMobile">
+                                    <img src="img/formation.svg" height="52px" alt="Starting 11 game">
+                                    <span>Starting 11 </span>
+                                </a>
+                                <ul id="authMobile" class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">F11 Clubs</a></li>
+                                    <li><a class="dropdown-item" href="#">F11 Countries</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="col-6">
+                            <li class="nav-item">
+                                <a class="nav-link" href="guess-player-from-career-path.html">
+                                    <img src="img/guess.svg" width="px" height="52px" alt="Guess player from career path game icon">
+                                    <span>Guess player from career</span>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="p-3">
+            <h1>Guess the Player from Career Path</h1>
+            <!-- Instructions Icon -->
+            <div class="instructions-icon">
+                <img src="img/info-icon.svg" alt="Instructions for Guess the Player game" id="instructionsBtn" style="cursor:pointer;width:24px;height:24px;">
+            </div>
+        
+            <!-- Modal for Instructions -->
+            <div id="instructionsModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>How to Play Guess the Player</h3>
+                    <h4>Welcome to the Guess the Player from career game! Test your knowledge of football players' careers by identifying players based on their transfer history.</h4>
+                    <p>Here are the basic rules:</p>
+                    <ul>
+                        <li>You will see a table with columns for "Season", "Team From", and "Team To".</li>
+                        <li>Initially, the details in the table will be hidden.</li>
+                        <li>Start by guessing the player based on the unknown career path.</li>
+                        <li>If your guess is incorrect, or if you click "Skip", a new row (transfer) will be revealed</li>
+                        <li>Your goal is to identify the player before all rows are revealed.</li>
+                    </ul>
+                    <p>Tips:</p>
+                    <ul>
+                        <li>Think of the well-known clubs to narrow down your guesses.</li>
+                        <li>Pay close attention to the year the transfer was made, it's very useful!</li>
+                        <li>A players first club might help you deduce his nationality</li>
+                        <li>If a player has many transfers on the same year he might be Loaned</li>
+                        <li>We show if a player is retired or not, use that to see if the player is still active</li>
+                    </ul>
+                    <p>Enjoy the challenge and showcase your football trivia knowledge!</p>
+                </div>
+            </div>
+            <h2>Identify the Player from Their Career Moves</h2>
+        </div>
+
+          <div id="game-container">
+            <div id="table-container">
+              <table id="transfer-table">
+                <thead>
+                  <tr>
+                    <th>Season</th>
+                    <th>Team From</th>
+                    <th>Team To</th>
+                  </tr>
+                </thead>
+                <tbody id="table-body">
+                  <!-- Filas de la tabla serán generadas dinámicamente -->
+                </tbody>
+              </table>
+            </div>
+            <div id="input-container">
+              <div id="search-container">
+                <input type="text" id="guess-input" placeholder="Guess the player">
+                <ul id="suggestions"></ul>
+                <button id="skip-button">Skip</button>
+              </div>
+              <p id="message"></p>
+
+            </div>
+
+          </div>
+      
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+  crossorigin="anonymous"></script>
+<script src="scripts/scripthb.js"></script>
+<script src="scripts/career.js"></script>
+
+</body>
+</html>
